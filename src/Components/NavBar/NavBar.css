@@ -48,7 +48,7 @@ a {
     }
 }
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width: 500px) {
     
     .NavBar{
         font-size: 14px;
