@@ -23,7 +23,7 @@ li:hover{
     transition: all 300ms;
     cursor: pointer;
 }
-img{
+.logo{
     margin-right: 92.77px;
     width: 120px;
 }
@@ -36,4 +36,51 @@ a {
     color:#FFFFFF;
     font-weight: 600;
     text-shadow: 0 0 30px #00CCFF;  
+}
+
+
+@media  screen and (max-width: 1200px) {
+    .logo{
+        width: 80px;
+    }
+    .NavBar{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    
+    .NavBar{
+        font-size: 14px;
+        width: 150px;
+        margin-left: 0;
+        font-size: 14px;
+        flex-direction: column-reverse;
+        position: fixed;
+        z-index: 100;
+    }
+    ul{
+        flex-direction: column;
+        margin-left: -50px;
+    }
+    .hide{
+        margin-left: -120px;
+        transition: all 300ms;
+    }
+    .visible{
+        margin-left: 0;
+        transition: all 300ms;
+        background-color: black;
+    }
+    .logo{
+        margin-top: 30px;
+        margin-right: 0;
+        margin-left: -40px;
+    }
+    .icon{
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    
 }
