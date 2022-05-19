@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Home from './pages/Home/Home';
+import AboutMe from './pages/AboutMe/AboutMe';
+import Contact from './pages/Contact/Contact';
+import Projects from './pages/Projects/Projects';
+import Skills from './pages/Skills/Skills';
+import AuroraProject from './pages/AuroraProject/AuroraProject'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+        <Route  path="/" element = {<Home/>} exact/>
+        <Route  path="/Contact" element = {<Contact/>} exact/>
+        <Route  path="/AboutMe" element = {<AboutMe/>} exact/>
+        <Route  path="/Projects" element = {<Projects/>} exact/>
+        <Route  path="/Skills" element = {<Skills/>} exact/>
+        <Route  path="/AuroraProject" element = {<AuroraProject/>} exact/>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

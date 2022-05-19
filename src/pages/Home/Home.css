@@ -1,0 +1,30 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+}
+.bigLogo{
+    margin-top:100px;
+    margin-left: 192.77px; 
+    width: 500px;
+    animation: float 6s ease-in-out infinite;
+}
+.bigLogo:hover{
+
+    
+    transform: scale(1.2);
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
